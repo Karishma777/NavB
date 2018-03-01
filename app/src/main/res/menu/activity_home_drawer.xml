@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_aboutus"
+            android:title="About Awards" />
+
+        <item
+            android:id="@+id/nav_org"
+            android:title="Organizers" />
+
+        <item
+            android:id="@+id/nav_guest"
+            android:title="Guests of Honour" />
+
+        <item
+            android:id="@+id/nav_faq"
+            android:title="FAQ" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:title="Contact us" />
+
+        <item
+            android:id="@+id/nav_terms"
+            android:title="Terms &amp; Conditions" />
+
+
+        <item
+            android:id="@+id/nav_privacy"
+            android:title="Privacy Policy" />
+
+        <item
+            android:id="@+id/lagout"
+            android:title="Log Out" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:clipToPadding="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/card_view"
+                    xmlns:card_view="https://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageview"
+                        android:background="@color/white"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:layout_below="@+id/maintitle"
+                        android:layout_width="95dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="95dp" />
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/semiblack"
+                    android:textAllCaps="true"
+                    android:text="AWESOME !"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="7sp"
+                    android:textSize="16sp"
+                    android:textColor="@color/semigray"
+                    android:text="Did you like the image ? Share it with your friends and claim your prize! "
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/title"
+                        android:background="@drawable/border_button"
+                        android:textColor="@color/green"
+                        android:textAllCaps="true"
+                        android:text="Skip"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp" />
+
+
+
+                    <Button
+                        android:layout_gravity="center"
+                        android:id="@+id/result"
+                        android:textColor="@color/white"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:background="@drawable/button"
+                        android:text="Grab your prize!"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_branding"
+                android:src="@drawable/img_branding"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

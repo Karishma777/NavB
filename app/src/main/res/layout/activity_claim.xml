@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bggray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:id="@+id/imagell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/capturedImage"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp" />
+
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="https://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    card_view:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:padding="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/claimimg"
+                            android:src="@drawable/prize_small"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+
+                        <LinearLayout
+                            android:layout_margin="10dp"
+                            android:layout_toRightOf="@id/claimimg"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/titleclaim"
+                                android:layout_gravity="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/semigray"
+                                android:text="CAPTURE @100"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/descclaim"
+                                android:layout_gravity="center"
+                                android:textSize="16sp"
+                                android:layout_marginTop="5dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/semigray"
+                                android:text="and win prize!"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_below="@+id/card_view"
+                    xmlns:card_view="https://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    card_view:cardCornerRadius="10dp">
+
+
+                    <FrameLayout
+                        android:padding="5dp"
+                        android:id="@+id/videoll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <fragment
+                            android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+                            android:id="@+id/youtube_fragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"/>
+
+
+                      <!--  <com.google.android.youtube.player.YouTubePlayerView
+                            android:id="@+id/youtube_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"/> -->
+
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_splash"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp" />
+
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_play"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+
+
+
+                    </FrameLayout>
+
+
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_below="@+id/imagell"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/discovermore"
+                    android:background="@drawable/border_button"
+                    android:textColor="@color/green"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:text="DISCOVER MORE"
+                    android:paddingLeft="5dp"
+                    android:drawableLeft="@drawable/ic_discover"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/shareimage"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textAllCaps="true"
+                    android:paddingLeft="5dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/icshare"
+                    android:background="@drawable/button"
+                    android:text="SHARE IMAGE"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

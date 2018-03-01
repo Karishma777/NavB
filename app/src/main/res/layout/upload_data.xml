@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/toolbar_normal"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:text="Describe your contribution to society\n(Note: less thani in 500 words)"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/spech"
+            android:lines="2"
+            android:maxLines="100"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:hint="Describe Your Contribution"
+            android:maxLength="500"
+            android:inputType="text"
+            android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/video_link"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:hint="Add Video Link"
+                android:inputType="text"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:background="@drawable/edittext_shadow"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/addpic"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:hint="Add Pictures"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="2"
+                android:layout_height="70dp">
+                <RelativeLayout
+                    android:id="@+id/image1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <com.newindiaawards.utility.RoundedImageView
+                        android:id="@+id/imge1"
+                        android:src="@drawable/icon_upload"
+                        android:layout_width="50dp"
+                        android:scaleType="centerInside"
+                        android:layout_height="50dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <com.newindiaawards.utility.RoundedImageView
+                        android:id="@+id/image2"
+                        android:src="@drawable/icon_upload"
+                        android:layout_width="50dp"
+                        android:scaleType="fitXY"
+                        android:layout_height="50dp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="2"
+                android:layout_height="70dp">
+                <RelativeLayout
+                    android:id="@+id/industrialGood"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+                    <com.newindiaawards.utility.RoundedImageView
+                        android:id="@+id/image3"
+                        android:src="@drawable/icon_upload"
+                        android:layout_width="50dp"
+                        android:scaleType="fitXY"
+                        android:layout_height="50dp" />
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/agroproduce"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+
+                    <com.newindiaawards.utility.RoundedImageView
+                        android:id="@+id/image4"
+                        android:src="@drawable/icon_upload"
+                        android:layout_width="50dp"
+                        android:scaleType="fitXY"
+                        android:layout_height="50dp" />
+
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_height="70dp">
+
+                    <com.newindiaawards.utility.RoundedImageView
+                        android:id="@+id/image5"
+                        android:src="@drawable/icon_upload"
+                        android:layout_width="50dp"
+                        android:scaleType="fitXY"
+                        android:layout_height="50dp" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:onClick="itemClicked"
+                android:checked="false"
+                android:layout_weight="0.9"
+                android:id="@+id/checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:text="I Accept Terms &amp; Conditions "
+                android:layout_weight="0.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:text="SUBMIT"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

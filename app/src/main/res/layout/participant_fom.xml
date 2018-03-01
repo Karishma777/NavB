@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/llspeech"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:gravity="center"
+            android:lines="10"
+            android:hint="Create your award winning pitch in 200-500 words about contribution to society"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lladds"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_below="@id/llspeech"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llphotos"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/meenu_filled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:text="ADD PHOTOS"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llvideos"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/meenu_filled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+
+                android:layout_width="wrap_content"
+                android:text="ADD Videos"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llfriends"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/meenu_filled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:text="Invite Friends"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="SUBMIT"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:layout_below="@id/lladds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>

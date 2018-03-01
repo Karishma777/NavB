@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "470263308624",
+    "project_id": "litewink-187316"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470263308624:android:3ed1fe04a7db1619",
+        "android_client_info": {
+          "package_name": "com.litewink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470263308624-ki8tlnh07iefmekc40df35631em919gd.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "470263308624-19c00qjki6i98383egokhlkdhskh40sd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.litewink",
+            "certificate_hash": "2e1d028e48a09389a83e5d222120fee13ba036d0"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-iM5tcvdEQD6dETd_Wg9MV5Zep6xiJ_Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

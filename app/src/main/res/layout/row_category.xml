@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/categoryImage"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/category_one"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:id="@+id/categoryTitle"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@+id/categoryImage"
+        android:layout_width="match_parent"
+        android:text="Architect of New India"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

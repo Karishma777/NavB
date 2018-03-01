@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/toolbar_normal"/>
+
+
+    <TextView
+        android:textColor="@color/semigray"
+        android:gravity="center"
+        android:text="Pick one image from below and click Next to continue."
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/desc"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/cancel"
+                android:background="@drawable/border_button"
+                android:textColor="@color/green"
+                android:textAllCaps="true"
+                android:text="CANCEL"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/next"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textAllCaps="true"
+                android:background="@drawable/button"
+                android:text="NEXT"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <GridView
+        android:layout_below="@+id/desc"
+        android:layout_above="@id/footer"
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:columnWidth="100dp"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:focusable="true"
+        android:clickable="true"/>
+
+</RelativeLayout>

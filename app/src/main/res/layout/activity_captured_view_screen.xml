@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/bottomview"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/backbutton"
+            android:layout_alignParentLeft="true"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp" />
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/morebutton"
+            android:layout_alignParentRight="true"
+            android:text="Discover More >"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp" />
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_above="@id/bottomview"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/digitalContent"
+            android:layout_width="0dp"
+            android:src="@drawable/lightvert"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/capturedImage"
+            android:layout_width="0dp"
+            android:src="@drawable/lightvert"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

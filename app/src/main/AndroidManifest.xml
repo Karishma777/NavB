@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.newindiaawards">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+
+    <application
+        android:name=".application.AppClass"
+        android:allowBackup="true"
+        android:configChanges="orientation|screenSize"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme"
+        android:windowSoftInputMode="stateHidden"
+        tools:replace="android:icon,android:theme,android:label">
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+
+        <activity android:name=".HomeActivity" />
+
+        <activity android:name=".NomineesListActivity" />
+        <activity android:name=".NomineesActivity" />
+        <activity android:name=".TypeSelectionActivity" />
+        <activity android:name=".ParticipantDetailForm" />
+        <activity android:name=".ParticipantFormActivity" />
+        <activity android:name=".FacebookPageLikeActivity" />
+        <activity android:name=".FacebookPageNavBaharatLikeActivity" />
+        <activity android:name=".UploadData" />
+
+        <activity android:name=".CategoryListActivity" />
+
+
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+
+    </application>
+
+</manifest>

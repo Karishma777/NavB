@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f4f5f7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar_normal"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/toolbar"
+        android:background="@color/white"
+        xmlns:card_view="https://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        card_view:cardCornerRadius="4dp">
+
+        <ImageView
+            android:id="@+id/couponImage"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <ProgressBar
+            android:id="@+id/loader"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <!--
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:background="@drawable/bg_coupon"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="80dp"
+                    android:id="@+id/claimimg"
+                    android:layout_height="80dp"
+                    android:elevation="12dp"
+                    app:cardCornerRadius="40dp"
+                    android:innerRadius="0dp"
+                    android:shape="ring"
+                    android:thicknessRatio="1.9">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                </android.support.v7.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/claimimg"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/titleclaim"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="BUY 1 GET 1 FREE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/descclaim"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="MOVIE TICKET !"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/semigray"
+                    android:text="coupon code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:background="#f1f1f1"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/semigray"
+                    android:text="1234567890"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="Use this coupon code to avail offer!"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="#ababab"
+                    android:text="valid until Nov, 15 2017"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        -->
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:gravity="left|center"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/save"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textAllCaps="true"
+        android:background="@drawable/button"
+        android:text="SAVE TO MY REWARDS"
+        android:layout_weight="1"
+        android:layout_width="200dp"
+        android:layout_height="40dp" />
+
+
+
+
+</RelativeLayout>

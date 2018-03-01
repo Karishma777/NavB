@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/surfaceview"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/backbutton"
+                android:layout_alignParentLeft="true"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp" />
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:text="Move Phone right left"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp" />
+
+
+            <com.xw.repo.BubbleSeekBar
+                android:layout_above="@+id/bottomview"
+                android:id="@+id/seekbar"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bsb_bubble_color="@color/colorPrimary"
+                app:bsb_bubble_text_color="@color/colorPrimaryDark"
+                app:bsb_max="100.0"
+                app:bsb_min="0.0"
+                app:bsb_progress="0"
+                app:bsb_second_track_color="@color/colorPrimaryDark"
+                app:bsb_section_count="5"
+                app:bsb_section_text_position="bottom_sides"
+                app:bsb_show_progress_in_float="true"
+                app:bsb_show_section_mark="true"
+                app:bsb_show_section_text="true"
+                app:bsb_show_thumb_text="true"
+                app:bsb_track_color="@color/colorPrimaryDark"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/bottomview"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/bottomll"
+                    android:visibility="gone"
+                    android:padding="5dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_margin="10dp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/bcontinuebutton"
+                        android:layout_alignParentRight="true"
+                        android:text=" Continue >"
+                        android:textColor="@color/white"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp" />
+
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/arview"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp" />
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+
+</RelativeLayout>

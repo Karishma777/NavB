@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:clipToPadding="false"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/card_view"
+                    xmlns:card_view="https://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageview"
+                        android:layout_margin="5dp"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:layout_below="@+id/maintitle"
+                        android:layout_width="90dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="95dp" />
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/semiblack"
+                    android:textAllCaps="true"
+                    android:text="NICE TRY!"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="7sp"
+                    android:textSize="16sp"
+                    android:textColor="@color/semigray"
+                    android:text="Capture the image at faster speed for a better picture and win prizes!"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/title"
+                        android:background="@drawable/border_button"
+                        android:textColor="@color/green"
+                        android:textAllCaps="true"
+                        android:text="Explore More"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <Button
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/morecapture"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"
+                        android:background="@drawable/button"
+                        android:text="Try Again"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_branding"
+                android:src="@drawable/img_branding"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

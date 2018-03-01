@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/imagell"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:src="@drawable/green_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                    <ImageView
+                        android:id="@+id/gif_image"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp" />
+
+
+
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginRight="48dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/semiblack"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:text="@string/move_your_phone_to_capture"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:lineSpacingExtra="6sp"
+                    android:gravity="center"
+                    android:layout_below="@id/title"
+                    android:textSize="16sp"
+                    android:textColor="@color/descgray"
+                    android:text="@string/instru_desc"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnGotIt"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button"
+                    android:text="@string/got_it"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/desc"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>

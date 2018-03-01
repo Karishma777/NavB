@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar_normal"/>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:background="@drawable/edittext_shadow"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/yd_image"
+                        android:layout_height="200dp" />
+
+
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:padding="10dp"
+                        android:textSize="30sp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:text="Y4D"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:textStyle="italic"
+                        android:padding="10dp"
+                        android:textSize="17sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:text="Help us to spread, Like our facebook page"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content">
+
+                    <com.inthecheesefactory.lib.fblike.widget.FBLikeView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/fbLikeView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></com.inthecheesefactory.lib.fblike.widget.FBLikeView>
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
